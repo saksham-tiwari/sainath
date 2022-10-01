@@ -43,3 +43,40 @@
 .swiper-pagination-bullet{
     background-color: black;
 }
+
+.caraousel-div{
+  position: relative;
+  top: 45%;
+  left: 10%;
+  text-align: left;
+  font-size: 18px;
+  width: 430px;
+}
+
+.caraousel-div h2{
+  font-size: 64px;
+  width: 320px;
+}
+
+.caraousel-div p{
+  margin-bottom: 50px;
+}
+
+.caraousel-div button{
+  width: 168px;
+  height: 48px;
+  border-radius: 8px;
+  border: none;
+  margin: 5px;
+  font-weight: bold;
+}
+
+.caraousel-div .ticket{
+  background: #FFFC00;
+  color: black;
+}
+
+.caraousel-div .trailer{
+  background: rgba(113, 113, 113, 0.5);
+  color: white;
+}

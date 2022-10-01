@@ -1,0 +1,79 @@
+nav{
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    background: linear-gradient(180deg, rgba(18, 18, 18, 0.8) 0%, rgba(18, 18, 18, 0.2) 84.72%);
+    height: 72px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav h2{
+    margin-left: 5%;
+}
+nav ul{
+    margin: 0;
+    margin-right: 5%;
+}
+nav ul li{
+    display: inline;
+    margin: 20px;
+}
+nav button{
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    margin: 20px;
+    font-size: 25px;
+}
+.hamMenu{
+    display: flex;
+    position:fixed;
+    top:0px;
+    right:0px;
+    width: 0;
+    height: 0;
+    border-radius: 100%;
+}
+.hamMenu ul{
+    list-style: none;
+    text-align: center;
+}
+.hamMenu ul button{
+    background: rgba(113, 113, 113, 0.5);
+    text-align: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: none;
+    padding-bottom: 4px;
+    color: white;
+    font-size: 36px;
+}
+
+
+
+@media screen and (max-width:768px) {
+    nav button{
+        display: block;
+    }
+    nav ul{
+        display: none;
+    }
+    .activeHam{
+        
+        width: 100%;
+        height: 100%;
+        background-color: #FFFC00;
+        z-index: 100;
+        font-size: 32px;
+        color: black;
+        justify-content: center;
+        align-items: center;
+        transform: scale(1);
+        border-radius: 0%;
+        transition: all 0.4s ease-in-out;
+    }
+}
