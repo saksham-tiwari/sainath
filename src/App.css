@@ -8,13 +8,13 @@ body{
 }
 
 h1{
-  margin-left: 72px;
+  margin-left: 5%;
   font-size: 32px;
   font-weight: 700;
 }
 
 .story{
-  margin: 0 72px;
+  margin: 0 5%;
 }
 
 footer{
@@ -44,7 +44,7 @@ footer button{
 .subscribe{
   margin-top: 56px;
   background: linear-gradient(180deg, #2A2A2A 0%, rgba(42, 42, 42, 0) 100%);
-  padding: 72px;
+  padding: 5%;
 }
 
 .subscribe>p{
@@ -75,4 +75,13 @@ footer button{
   font-weight: bold;
   background: #FFFC00;
   color: black;
+}
+
+@media only screen and (max-width:600px) {
+  .subscribe>p{
+    width: 300px;
+  }
+  .subscribe>form{
+    width: 290px;
+  }
 }

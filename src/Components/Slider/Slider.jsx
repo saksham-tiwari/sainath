@@ -17,15 +17,15 @@ export default function Slider() {
   return (
     <>
       <Swiper
-        slidesPerView={3}
+        slidesPerView={2.5}
         spaceBetween={30}
-        slidesPerGroup={3}
+        slidesPerGroup={1}
         loop={true}
         loopFillGroupWithBlank={true}
         pagination={{
           clickable: true,
         }}
-        style={{height:"350px",background:"#1E1E1E",marginBottom:"5%"}}
+        style={{height:"350px",background:"#1E1E1E",marginBottom:"5%",marginLeft:"5%",width:"90%",marginRight:"5%"}}
         navigation={true}
         modules={[Pagination, Navigation]}
         className="mySwiper"
