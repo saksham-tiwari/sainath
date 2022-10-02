@@ -1,10 +1,11 @@
 import React from 'react'
 import "./Navbar.css"
+import logo from "../../Assets/Logo.svg"
 const Navbar = () => {
   return (
     <>
 <nav>
-        <h2>Navbar</h2>
+        <img src={logo} alt="Sainath Productions" className='logo'/>
         <ul>
             <li>Movie</li>
             <li>Events</li>

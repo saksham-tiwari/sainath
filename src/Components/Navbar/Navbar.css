@@ -8,6 +8,9 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
+.logo{
+    margin-left: 72px;
+}
 nav h2{
     margin-left: 5%;
 }
