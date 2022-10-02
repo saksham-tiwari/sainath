@@ -7,11 +7,13 @@ import "swiper/css";
 import "swiper/css/bundle";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import "swiper/css/autoplay";
+
 
 import "./styles.css";
 
 // import required modules
-import { Pagination, Navigation } from "swiper";
+import { Pagination, Navigation, Autoplay } from "swiper";
 import CaraouselDiv from "./CaraouselDiv";
 
 export default function Caraousel() {
@@ -25,9 +27,13 @@ export default function Caraousel() {
           clickable: true,
         }}
         navigation={true}
-        modules={[Pagination, Navigation]}
+        modules={[Pagination, Navigation, Autoplay]}
         className="mySwiper"
-        style={{height:"700px",background:"#1E1E1E;"}}
+        style={{height:"700px",background:"#1E1E1E",marginBottom:"5%"}}
+        autoplay={{
+          delay:2000,
+        }}
+        
       >
         <SwiperSlide>
           <CaraouselDiv/>

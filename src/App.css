@@ -6,3 +6,68 @@ body{
   margin: 0;
   padding: 0;
 }
+
+h1{
+  margin-left: 72px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+footer{
+  background: #2A2A2A;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 62px;
+}
+
+footer div{
+  padding: 10px;
+}
+
+footer button{
+  border: 1.5px solid #ffffff41;
+  background: none;
+  border-radius: 50%;
+  padding: 5px;
+  margin: 5px;
+  width: 35px;
+  height: 35px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.subscribe{
+  background: linear-gradient(180deg, #2A2A2A 0%, rgba(42, 42, 42, 0) 100%);
+  padding: 72px;
+}
+
+.subscribe>p{
+  width: 550px;
+}
+
+.subscribe>h1{
+  margin: 0;
+  font-size: 32px;
+}
+
+.subscribe>form{
+  width: 360px;
+}
+.form-control,.form-control:focus{
+  background-color: #2A2A2A;
+  border: none;
+  color: white;
+  box-shadow: none;
+}
+
+.submit{
+  width: 133px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  margin: 5px;
+  font-weight: bold;
+  background: #FFFC00;
+  color: black;
+}

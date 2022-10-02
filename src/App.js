@@ -1,14 +1,12 @@
 import './App.css';
-import Slider from './Components/Slider/Slider';
-import Caraousel from './Components/Caraousel/Caraousel';
 import Navbar from './Components/Navbar/Navbar';
+import Home from './Pages/Home/Home';
 
 function App() {
   return (
     <>
       <Navbar/>
-      <Caraousel/>
-      <Slider/>
+      <Home/>
     </>
   );
 }
