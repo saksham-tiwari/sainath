@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -12,7 +12,10 @@ import "./styles.css";
 // import required modules
 import { Pagination, Navigation } from "swiper";
 
-export default function Slider() {
+export default function Slider(props) {
+  const [click,setClick] = useState(Array(9).fill(false))
+  // eslint-disable-next-line no-unused-vars
+  const [urls,setUrls] = useState(["jF5rJAXUY4A","hpwnlr-ZHB0","mqqft2x_Aa4","eLucCWmf6V4","_Z3QKkl1WyM"])
 
   return (
     <>
@@ -25,7 +28,7 @@ export default function Slider() {
         pagination={{
           clickable: true,
         }}
-        style={{height:"350px",background:"#1E1E1E",marginBottom:"5%",marginLeft:"5%",width:"90%",marginRight:"5%"}}
+        style={{height:"17em",background:"#1E1E1E",marginBottom:"5%",marginLeft:"5%",width:"90%",marginRight:"5%"}}
         navigation={true}
         modules={[Pagination, Navigation]}
         className="mySwiper"
@@ -34,21 +37,18 @@ export default function Slider() {
           console.log(x,y)
         }}
       >
-        <SwiperSlide>
-          <iframe width="560" height="350" src="https://www.youtube.com/embed/jF5rJAXUY4A?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </SwiperSlide>
-        <SwiperSlide>
-          <iframe width="560" height="350" src="https://www.youtube.com/embed/hpwnlr-ZHB0?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </SwiperSlide>
-        <SwiperSlide>
-          <iframe width="560" height="350" src="https://www.youtube.com/embed/mqqft2x_Aa4?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+      {urls.map((url,ind)=>{
+        return (
+          <SwiperSlide onClick={(e)=>{
+          console.log(e)
+          let x = [...click]
+          x[0]=true
+          console.log(x)
+          setClick(click)
+          props.setUrl(url)
+        }} style={{backgroundImage:`url('https://img.youtube.com/vi/${url}/0.jpg')`,backgroundPosition:"center",backgroundSize:"cover",backgroundRepeat:"no-repeat"}}></SwiperSlide>
+        )
+      })}
       </Swiper>
     </>
   );

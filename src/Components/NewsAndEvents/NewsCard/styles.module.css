@@ -1,0 +1,9 @@
+.newsCard{
+    display: flex;
+    flex-direction: column;
+}
+
+.newsCard img{
+    width: 309px;
+    height: 415px;
+}
