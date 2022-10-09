@@ -1,13 +1,13 @@
-.newsCard{
+.eventsCard{
     display: flex;
     flex-direction: column;
-    margin: 0 20px;
+    margin: 0px 20px;
     margin-left: 0;
-    flex: 2;
-    min-width: 220px;
+    flex: 3;
+    min-width: 360px;
 }
 
-.newsCard img{
+.eventsCard img{
     width: 100%;
     height: 100%;
     border-radius: 8px;
