@@ -20,6 +20,7 @@ export default function Slider(props) {
   return (
     <>
       <Swiper
+        ref = {props.movieRef}
         slidesPerView={2.5}
         spaceBetween={30}
         slidesPerGroup={1}

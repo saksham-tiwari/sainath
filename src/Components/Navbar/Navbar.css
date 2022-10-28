@@ -54,6 +54,12 @@ nav button{
     padding-bottom: 4px;
     color: white;
     font-size: 36px;
+    opacity: 0.9;
+}
+.links li{
+    cursor: pointer;
+    text-decoration: none !important;
+    opacity: 1;
 }
 
 

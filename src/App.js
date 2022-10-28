@@ -1,12 +1,34 @@
 import './App.css';
+import React,{useRef} from 'react';
 import Navbar from './Components/Navbar/Navbar';
 import Home from './Pages/Home/Home';
+import { propTypes } from 'react-bootstrap/esm/Image';
 
 function App() {
+
+  const movieRef = useRef(null);
+  const eventsRef = useRef(null);
+  const contactRef = useRef(null);
+
+
+  const scrollToMovie = () => {
+    movieRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
+  
+  const scrollToEvents = () => {
+    eventsRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
+    
+  const scrollToContact = () => {
+    contactRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <>
-      <Navbar/>
-      <Home/>
+      <Navbar movieLink={scrollToMovie} eventsLink = {scrollToEvents} contactLink={scrollToContact} />
+      <Home movieRef={movieRef} eventsRef={eventsRef} contactRef={contactRef}/>
     </>
   );
 }

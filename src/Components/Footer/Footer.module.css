@@ -1,0 +1,11 @@
+.footerCaption{
+    position: relative;
+}
+
+.arrow{
+    cursor: pointer;
+    background-size: contain;
+    position: absolute;
+    top:-100%;
+    right:0;
+}

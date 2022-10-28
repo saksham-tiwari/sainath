@@ -16,10 +16,11 @@ import "./styles.css";
 import { Pagination, Navigation, Autoplay } from "swiper";
 import CaraouselDiv from "./CaraouselDiv";
 
-export default function Caraousel() {
+export default function Caraousel(props) {
   return (
     <>
       <Swiper
+        ref={props.topRef} 
         slidesPerView={1}
         spaceBetween={30}
         loop={true}
