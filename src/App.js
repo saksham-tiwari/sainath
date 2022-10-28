@@ -15,15 +15,18 @@ function App() {
     movieRef.current.scrollIntoView({ behavior: "smooth" });
   };
 
-  
   const scrollToEvents = () => {
     eventsRef.current.scrollIntoView({ behavior: "smooth" });
   };
-
     
   const scrollToContact = () => {
     contactRef.current.scrollIntoView({ behavior: "smooth" });
   };
+
+  window.addEventListener("scroll",function(){
+    let header = document.querySelector("nav");
+    header.classList.toggle("sticky",window.scrollY > 0)
+  })
 
   return (
     <>

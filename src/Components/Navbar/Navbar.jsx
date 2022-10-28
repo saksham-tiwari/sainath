@@ -4,7 +4,7 @@ import logo from "../../Assets/Logo.svg"
 const Navbar = (props) => {
   return (
     <>
-    <nav>
+    <nav >
         <img src={logo} alt="Sainath Productions" className='logo'/>
         <ul className="links">
             <li onClick={props.movieLink} >Movie</li>

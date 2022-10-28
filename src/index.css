@@ -1,5 +1,3 @@
-
-
 @font-face {
   font-family: "Gilroy";
   src: url("Assets/fonts/Gilroy-Black.ttf");
@@ -14,14 +12,12 @@
   font-style: bold;
 }
 
-
 @font-face {
   font-family: "Gilroy";
   src: url("Assets/fonts/Gilroy-ExtraBold.ttf");
   font-weight: 800;
   font-style: bolder;
 }
-
 
 @font-face {
   font-family: "Gilroy";
@@ -30,16 +26,12 @@
   font-style: bold;
 }
 
-
-
 @font-face {
   font-family: "Gilroy";
   src: url("Assets/fonts/Gilroy-Medium.ttf");
   font-weight: 400;
   font-style: bold;
 }
-
-
 
 @font-face {
   font-family: "Gilroy";
@@ -50,14 +42,18 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.sticky{
+  background-color: #121212;
+  transition: all 0.3s ease;
 }
