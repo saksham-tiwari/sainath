@@ -22,9 +22,9 @@ const Navbar = (props) => {
         <button onClick={()=>{
           document.querySelector(".hamMenu").classList.toggle("activeHam")
         }}>&times;</button>
-        <li>Movie</li>
-        <li>Events</li>
-        <li>Contact Us</li>
+        <li onClick={props.movieLink} >Movie</li>
+        <li onClick={props.eventsLink}>Events</li>
+        <li onClick={props.contactLink}>Contact Us</li>
       </ul>
     </div>
     </>
