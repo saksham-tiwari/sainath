@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import styles from "./Footer.module.css";
 import arrow from "../../Assets/upArrow.svg";
 import logo from "../../Assets/LogoCircle.svg"
