@@ -14,7 +14,7 @@
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-
+  cursor: pointer;
 }
 
 .swiper-slide img {

@@ -26,8 +26,19 @@ const Home = (props) => {
           <h1>News and Events</h1>
           <NewsAndEvents eventsRef = {props.eventsRef}/>
           {/* <CardModal/> */}
-          <h1>Our story</h1>
-          <p className='story'>orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+          <h1>Our Story</h1>
+          <p className='story'>
+          Sainath international is an Indian Film Producing Company Owned by Anjana Srivastava. She has been in and around the entertainment world for a quite a long time. Having completed her Master's degree in Vocal music from Prayag Sangeet Samiti, she now plans to move the venture ahead and provide quality entertainment contents (T.V. Series, Web Series and Movies etc.). Currently we are into producing a feature film "Dil Dhadakta Hai Tumhare Naam Se".
+          </p>
+          <h1>Our Mission</h1>
+          <p className='story'>
+          To promote new faces and fresh talents to the bollywood.
+          </p>
+          <h1>Our Vision</h1>
+          <p className='story'>
+          Produce outstanding content (movies, T.V. shows, web series, live events) for the people.
+          </p>
+          
           <Subscribe/>
           <Footer contactRef={props.contactRef} backToTop={scrollToTop}/>
       </>

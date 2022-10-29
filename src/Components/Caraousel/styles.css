@@ -40,23 +40,37 @@
 
 .caraousel-div{
   font-family: "Gilroy";
-  position: relative;
-  top: 45%;
+  position: fixed;
+  /* top: 45%; */
+  bottom: 10%;
   left: 10%;
   text-align: left;
   font-size: 18px;
   width: 26.875rem;
 }
 
+.caraousel-div a{
+  text-decoration: none;
+  color: white;
+}
+
 .caraousel-div h2{
   font-size: 64px;
-  width: 20rem;
+  width: 45rem;
+  min-width: 20rem;
   font-weight: 600;
-
 }
 
 .caraousel-div p{
   margin-bottom: 50px;
+  width: 35rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  height: 3rem;
+  margin-bottom: 20px;
 }
 
 .caraousel-div button{
@@ -81,6 +95,12 @@
 }
 
 @media only screen and (max-width:600px){
+  .caraousel-div h2{
+    font-size: 48px;
+  }
+  .caraousel-div p{
+    width: 20rem;
+  }
   .caraousel-div .ticket{
     width: 6.25rem;
   }
@@ -89,5 +109,14 @@
   }
   .caraousel-div button{
     font-size: 14px;
+  }
+}
+
+@media only screen and (max-width:380px){
+  .caraousel-div h2{
+    font-size: 36px;
+  }
+  .caraousel-div p{
+    width: 16rem;
   }
 }
