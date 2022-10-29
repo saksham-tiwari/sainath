@@ -34,13 +34,13 @@ const Footer = (props) => {
       </div>
       <div className={styles.socialBtns} >
         <button>
-          <i class="fa-brands fa-facebook-f"></i>
+          <i className="fa-brands fa-facebook-f"></i>
         </button>
         <button>
-          <i class="fa-brands fa-linkedin-in"></i>
+          <i className="fa-brands fa-linkedin-in"></i>
         </button>
         <button>
-          <i class="fa-brands fa-twitter"></i>
+          <i className="fa-brands fa-twitter"></i>
         </button>
         <br />
 

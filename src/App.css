@@ -7,6 +7,7 @@ body{
   padding: 0;
 }
 
+
 .overlay{
   position: absolute;
   width: 100vw;
@@ -122,6 +123,20 @@ footer>div:nth-child(3){
   font-weight: bold;
   background: #FFFC00;
   color: black;
+}
+
+.modalCross{
+  position: absolute;
+  background: rgba(113, 113, 113, 0.5);
+  right: 10px;
+  top: 10px;
+  z-index: 100;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 0.5rem;
+  cursor: pointer;
 }
 
 @media only screen and (max-width:1020px) {

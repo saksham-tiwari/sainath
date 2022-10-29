@@ -14,8 +14,29 @@ import { Pagination, Navigation } from "swiper";
 
 export default function Slider(props) {
   const [click,setClick] = useState(Array(9).fill(false))
-  // eslint-disable-next-line no-unused-vars
-  const [urls,setUrls] = useState(["Iw0W4H2VZ1A","hpwnlr-ZHB0","mqqft2x_Aa4","eLucCWmf6V4","_Z3QKkl1WyM"])
+  const [details] = useState([
+    {
+      name:"Dil Dhadakta Hai Tumhare Naam Se",
+      about:"The trailer reveals the film and depicts all characters therein. The film circles around the drama of a middle-class family where the father squanders his future savings on his son in anticipation that when he would get placed highly, his economic crisis come to an end.",
+      url:"Iw0W4H2VZ1A"
+    },
+    {
+      name:"Vikram Vedha",
+      about:"Thirty years after the Battle of Endor, a new threat has risen in the form of the First Orderand the villainous Kylo Ren.",
+      url:"hpwnlr-ZHB0"
+    },
+    {
+      name:"Vikram Vedha",
+      about:"Thirty years after the Battle of Endor, a new threat has risen in the form of the First Orderand the villainous Kylo Ren.",
+      url:"mqqft2x_Aa4"
+    },
+    {
+      name:"Vikram Vedha",
+      about:"Thirty years after the Battle of Endor, a new threat has risen in the form of the First Orderand the villainous Kylo Ren.",
+      url:"_Z3QKkl1WyM"
+    }
+
+  ])
 
   return (
     <>
@@ -38,7 +59,7 @@ export default function Slider(props) {
           console.log(x,y)
         }}
       >
-      {urls.map((url,ind)=>{
+      {details.map((detail,ind)=>{
         return (
           <SwiperSlide onClick={(e)=>{
           console.log(e)
@@ -46,8 +67,8 @@ export default function Slider(props) {
           x[0]=true
           console.log(x)
           setClick(click)
-          props.setUrl(url)
-        }} style={{backgroundImage:`url('https://img.youtube.com/vi/${url}/0.jpg')`,backgroundPosition:"center",backgroundSize:"cover",backgroundRepeat:"no-repeat"}}></SwiperSlide>
+          props.setDetail(detail)
+        }} style={{backgroundImage:`url('https://img.youtube.com/vi/${detail.url}/0.jpg')`,backgroundPosition:"center",backgroundSize:"cover",backgroundRepeat:"no-repeat"}}></SwiperSlide>
         )
       })}
       </Swiper>

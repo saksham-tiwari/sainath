@@ -17,8 +17,7 @@ import { Pagination, Navigation, Autoplay } from "swiper";
 import CaraouselDiv from "./CaraouselDiv";
 
 export default function Caraousel(props) {
-  const [urls,setUrls] = useState(["Iw0W4H2VZ1A","hpwnlr-ZHB0","mqqft2x_Aa4","mqqft2x_Aa4","_Z3QKkl1WyM"])
-  const [details,setDetails] = useState([
+  const [details] = useState([
     {
       name:"Dil Dhadakta Hai Tumhare Naam Se",
       about:"The trailer reveals the film and depicts all characters therein. The film circles around the drama of a middle-class family where the father squanders his future savings on his son in anticipation that when he would get placed highly, his economic crisis come to an end.",

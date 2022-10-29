@@ -5,9 +5,10 @@ import Footer from '../../Components/Footer/Footer'
 import NewsAndEvents from '../../Components/NewsAndEvents/NewsAndEvents'
 import Slider from '../../Components/Slider/Slider'
 import Subscribe from '../../Components/Subscribe/Subscribe'
+import _ from "lodash"
 
 const Home = (props) => {
-  const [url,setUrl]=useState("")
+  const [detail,setDetail]=useState({})
 
   const topRef = useRef(null);
 
@@ -20,8 +21,8 @@ const Home = (props) => {
       <>
           <Caraousel topRef={topRef}/>
           <h1>Trailers</h1>
-          <Slider movieRef={props.movieRef} setUrl={setUrl}/>
-      {url!==""&&<CardModal url={url} setUrl={setUrl}/>}
+          <Slider movieRef={props.movieRef} setDetail={setDetail}/>
+          {!_.isEmpty(detail)&&<CardModal detail={detail} setDetail={setDetail}/>}
 
           <h1>News and Events</h1>
           <NewsAndEvents eventsRef = {props.eventsRef}/>

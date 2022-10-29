@@ -24,4 +24,28 @@
   object-fit: cover; 
 }
 
+.swiper-button-prev, .swiper-button-next{
+  width: 4.125rem !important;
+  height: 4.125rem !important;
+}
+
+.swiper-button-next{
+  background-image: url("../../Assets/nextBtn.svg") !important;
+}
+.swiper-button-next::after{
+  content: "" !important;
+}
+.swiper-button-prev{
+  background-image: url("../../Assets/prevBtn.svg") !important;
+}
+.swiper-button-prev::after{
+  content: "" !important;
+}
+
+.swiper-pagination-bullet{
+  /* color: white !important; */
+  background-color: white;
+  width: 14px !important;
+  height: 14px !important;
+}
 

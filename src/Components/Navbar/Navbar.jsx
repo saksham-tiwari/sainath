@@ -14,7 +14,7 @@ const Navbar = (props) => {
         <button onClick={()=>{
           document.querySelector(".hamMenu").classList.toggle("activeHam")
         }}>
-          <i class="fa fa-bars"></i>
+          <i className="fa fa-bars"></i>
         </button>
     </nav>
     <div className='hamMenu'>
