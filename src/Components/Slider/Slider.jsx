@@ -11,9 +11,11 @@ import "./styles.css";
 
 // import required modules
 import { Pagination, Navigation } from "swiper";
+import useWindowDimensions from "../../Assets/hooks/useWindowDimensions";
 
 export default function Slider(props) {
   const [click,setClick] = useState(Array(9).fill(false))
+  const dimensions = useWindowDimensions();
   const [details] = useState([
     {
       name:"Dil Dhadakta Hai Tumhare Naam Se",
@@ -42,7 +44,7 @@ export default function Slider(props) {
     <>
       <Swiper
         ref = {props.movieRef}
-        slidesPerView={2.5}
+        slidesPerView={dimensions.width>800?2.5:(dimensions.width>600?1.5:1)}
         spaceBetween={30}
         slidesPerGroup={1}
         loop={true}

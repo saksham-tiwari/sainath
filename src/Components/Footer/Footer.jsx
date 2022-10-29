@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./Footer.module.css";
 import arrow from "../../Assets/upArrow.svg";
 import logo from "../../Assets/LogoCircle.svg"
+import useWindowDimensions from "../../Assets/hooks/useWindowDimensions";
 
 const Footer = (props) => {
   const d = new Date();
   let year = d.getFullYear();
+  const dimensions = useWindowDimensions();
 
   
   return (
@@ -50,7 +52,7 @@ const Footer = (props) => {
         >
           © {year} Sainath Production <br />
           All rights reserved{" "}
-          <div onClick={props.backToTop} className={styles.arrow}>
+          <div onClick={props.backToTop} className={styles.arrow} style={dimensions.pageYOffset > 500?{display:"block"}:{display:"none"}}>
             <img src={arrow} alt="arrow" />
           </div>
         </div>

@@ -5,9 +5,10 @@
 .arrow{
     cursor: pointer;
     background-size: contain;
-    position: absolute;
-    top:-100%;
+    position: fixed;
+    bottom:2rem;
     right:0;
+    z-index: 10000;
 }
 .logoDiv{
     font-size: 16px;

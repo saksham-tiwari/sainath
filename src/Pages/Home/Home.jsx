@@ -7,6 +7,7 @@ import Slider from '../../Components/Slider/Slider'
 import Subscribe from '../../Components/Subscribe/Subscribe'
 import _ from "lodash"
 
+
 const Home = (props) => {
   const [detail,setDetail]=useState({})
 
