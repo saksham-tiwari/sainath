@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 body{
-  font-family: 'Questrial', sans-serif;
+  font-family: 'Gilroy', sans-serif;
   background-color: #1E1E1E;
   color: white; 
   margin: 0;
@@ -88,20 +88,23 @@ footer>div:nth-child(3){
 .subscribe{
   margin-top: 56px;
   background: linear-gradient(180deg, #2A2A2A 0%, rgba(42, 42, 42, 0) 100%);
-  padding: 5%;
+  padding: 1.75rem 4.5rem;
 }
 
 .subscribe>p{
-  width: 550px;
+  width: 34.375rem;
+  font-size: 18px;
 }
 
 .subscribe>h1{
   margin: 0;
+  margin-bottom: 16px;
   font-size: 32px;
+  font-weight: 700;
 }
 
 .subscribe>form{
-  width: 360px;
+  width: 22.5rem;
 }
 .form-control,.form-control:focus{
   background-color: #2A2A2A;
@@ -111,11 +114,11 @@ footer>div:nth-child(3){
 }
 
 .submit{
-  width: 133px;
-  height: 40px;
+  width: 8.313rem;
+  height: 2.5rem;
   border-radius: 8px;
   border: none;
-  margin: 5px;
+  margin: 0px;
   font-weight: bold;
   background: #FFFC00;
   color: black;
@@ -143,9 +146,15 @@ footer>div:nth-child(3){
     flex:6;
   }
   .subscribe>p{
-    width: 300px;
+    width: 18.75rem;
   }
   .subscribe>form{
-    width: 290px;
+    width: 18.125rem;
+  }
+}
+
+@media only screen and (max-width:440px) {
+  .subscribe{
+    padding-left: 5%;
   }
 }

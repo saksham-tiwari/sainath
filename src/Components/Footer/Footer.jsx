@@ -16,21 +16,21 @@ const Footer = (props) => {
           &ensp; Sainath Production
         </div>
         <div className="mobileFoot">
-          27th KM Milestone, Delhi - Meerut Expy, Ghaziabad, Uttar Pradesh 201009{" "}
+          Flat No. 4, C/33, Jivan Sarita Building, Sector-10, Shanti Nagar, Near Swami Narayan Temple, Mira Road East, Thane, Maharashtra, 401107
           <br />
           <br />
-          +91 65XXXXXXX <br />
+          +91 9022866483 <br />
           <br />
-          contact@sainath production <br />
+          contact@sainath.production <br />
         </div>
       </div>
       <div className="webFoot" >
-        27th KM Milestone, Delhi - Meerut Expy, Ghaziabad, Uttar Pradesh 201009{" "}
+        Flat No. 4, C/33, Jivan Sarita Building, Sector-10, Shanti Nagar, Near Swami Narayan Temple, Mira Road East, Thane, Maharashtra, 401107
         <br />
         <br />
-        +91 65XXXXXXX <br />
+        +91 9022866483 <br />
         <br />
-        contact@sainath production <br />
+        contact@sainath.production <br />
       </div>
       <div className={styles.socialBtns} >
         <button>
