@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Footer.module.css";
 import arrow from "../../Assets/upArrow.svg";
+import logo from "../../Assets/LogoCircle.svg"
 
 const Footer = (props) => {
   const d = new Date();
@@ -9,8 +10,21 @@ const Footer = (props) => {
   
   return (
     <footer ref={props.contactRef}>
-      <div style={{ flex: "2" }}>Sainath Production</div>
-      <div style={{ flex: "5" }}>
+      <div>
+        <div className={styles.logoDiv}>
+          <img src={logo} alt="logo"/>
+          &ensp; Sainath Production
+        </div>
+        <div className="mobileFoot">
+          27th KM Milestone, Delhi - Meerut Expy, Ghaziabad, Uttar Pradesh 201009{" "}
+          <br />
+          <br />
+          +91 65XXXXXXX <br />
+          <br />
+          contact@sainath production <br />
+        </div>
+      </div>
+      <div className="webFoot" >
         27th KM Milestone, Delhi - Meerut Expy, Ghaziabad, Uttar Pradesh 201009{" "}
         <br />
         <br />
@@ -18,7 +32,7 @@ const Footer = (props) => {
         <br />
         contact@sainath production <br />
       </div>
-      <div style={{ flex: "4" }}>
+      <div className={styles.socialBtns} >
         <button>
           <i class="fa-brands fa-facebook-f"></i>
         </button>

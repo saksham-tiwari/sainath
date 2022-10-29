@@ -45,12 +45,12 @@
   left: 10%;
   text-align: left;
   font-size: 18px;
-  width: 430px;
+  width: 26.875rem;
 }
 
 .caraousel-div h2{
   font-size: 64px;
-  width: 320px;
+  width: 20rem;
   font-weight: 600;
 
 }
@@ -60,8 +60,8 @@
 }
 
 .caraousel-div button{
-  width: 168px;
-  height: 48px;
+  width: 10.5rem;
+  height: 3rem;
   border-radius: 8px;
   border: none;
   margin: 5px;
@@ -78,4 +78,16 @@
   font-weight: 500;
   background: rgba(113, 113, 113, 0.5);
   color: white;
+}
+
+@media only screen and (max-width:600px){
+  .caraousel-div .ticket{
+    width: 6.25rem;
+  }
+  .caraousel-div .trailer{
+    width: 8.875rem;
+  }
+  .caraousel-div button{
+    font-size: 14px;
+  }
 }

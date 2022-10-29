@@ -2,7 +2,7 @@ import './App.css';
 import React,{useRef} from 'react';
 import Navbar from './Components/Navbar/Navbar';
 import Home from './Pages/Home/Home';
-import { propTypes } from 'react-bootstrap/esm/Image';
+// import { propTypes } from 'react-bootstrap/esm/Image';
 
 function App() {
 

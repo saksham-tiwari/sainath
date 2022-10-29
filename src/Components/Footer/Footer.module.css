@@ -9,3 +9,27 @@
     top:-100%;
     right:0;
 }
+.logoDiv{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+@media only screen and (max-width:600px){
+    .socialBtns{
+        margin-top: 10px;
+    }
+    .socialBtns button{
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .socialBtns button{
+        width: 30px;
+        height: 30px;
+        margin-right: 3px;
+    }
+    .socialBtns i{
+        font-size: 12px;
+    }
+}
