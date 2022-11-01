@@ -18,7 +18,7 @@ const Footer = (props) => {
           &ensp; Sainath Production
         </div>
         <div className="mobileFoot">
-          Flat No. 4, C/33, Jivan Sarita Building, Sector-10, Shanti Nagar, Near Swami Narayan Temple, Mira Road East, Thane, Maharashtra, 401107
+          Flat No. 4, C/33, Jivan Sarita Building, Sector-10, Shanti Nagar, Near Swami Narayan Temple, Mira Road East, Thane, Maharashtra, 401107 <br/><br/> 171, Old Lashker Line, Old Baihrana, Prayagraj, Uttar Pradesh - 211003
           <br />
           <br />
           +91 9022866483 <br />
@@ -27,10 +27,10 @@ const Footer = (props) => {
         </div>
       </div>
       <div className="webFoot" >
-        Flat No. 4, C/33, Jivan Sarita Building, Sector-10, Shanti Nagar, Near Swami Narayan Temple, Mira Road East, Thane, Maharashtra, 401107
+        Flat No. 4, C/33, Jivan Sarita Building, Sector-10, Shanti Nagar, Near Swami Narayan Temple, Mira Road East, Thane, Maharashtra, 401107 <br/><br/>171, Old Lashker Line, Old Baihrana, Prayagraj, Uttar Pradesh - 211003
         <br />
         <br />
-        +91 9022866483 <br />
+        +91 9022866483, 9555223296 <br />
         <br />
         contact@sainath.production <br />
       </div>

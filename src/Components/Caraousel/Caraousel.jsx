@@ -24,9 +24,9 @@ export default function Caraousel(props) {
       url:"Iw0W4H2VZ1A"
     },
     {
-      name:"Vikram Vedha",
-      about:"Thirty years after the Battle of Endor, a new threat has risen in the form of the First Orderand the villainous Kylo Ren.",
-      url:"hpwnlr-ZHB0"
+      name:"Meri Chahat",
+      about:"MERI CHAAHAT (PART-1) | BAZIRAO BABBAN YADAV, SAPNA SINGH, ANIL SRIVASTAVA | HINDI NEW MOVIE 2022",
+      url:"RCOviQFSVcI"
     },
     {
       name:"Vikram Vedha",
