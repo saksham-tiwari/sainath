@@ -2,13 +2,13 @@ import React from 'react'
 import styles from "./styles.module.css"
 // import img from "../../../Assets/events.png"
 
-const EventsCard = () => {
+const EventsCard = (props) => {
   return (
-    <div className={styles.eventsCard}>
-    <img src="https://img.youtube.com/vi/Iw0W4H2VZ1A/hqdefault.jpg" style={{maxHeight:"30rem"}} alt="frame"></img>
+    <div className={styles.eventsCard} onClick={()=>window.open(`https://www.youtube.com/watch?v=${props.url}`,'mywindow')} style={{cursor: "pointer"}}>
+    <img src={`https://img.youtube.com/vi/${props.url}/hqdefault.jpg`} style={{maxHeight:"30rem"}} alt="frame"></img>
     <div>
-        <h2>Dil Dhadakta Hai Tumhare Naam se</h2>
-        <p>Releasing soon</p>
+        <h2>Screening</h2>
+        <p>Dil Dhadakta Hai Tumhare Naam se</p>
     </div>
 </div>
   )
