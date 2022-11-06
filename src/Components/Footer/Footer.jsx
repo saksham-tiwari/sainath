@@ -15,7 +15,7 @@ const Footer = (props) => {
       <div>
         <div className={styles.logoDiv}>
           <img src={logo} alt="logo"/>
-          &ensp; Sainath Production
+          &ensp; Sainath International
         </div>
         <div className="mobileFoot">
           Flat No. 4, C/33, Jivan Sarita Building, Sector-10, Shanti Nagar, Near Swami Narayan Temple, Mira Road East, Thane, Maharashtra, 401107 <br/><br/> 171, Old Lashker Line, Old Baihrana, Prayagraj, Uttar Pradesh - 211003
@@ -50,7 +50,7 @@ const Footer = (props) => {
           className={styles.footerCaption}
           style={{ textAlign: "right", color: "#FFFFFF", opacity: "0.65" }}
         >
-          © {year} Sainath Production <br />
+          © {year} Sainath International <br />
           All rights reserved{" "}
           <div onClick={props.backToTop} className={styles.arrow} style={dimensions.pageYOffset > 500?{display:"block"}:{display:"none"}}>
             <img src={arrow} alt="arrow" />

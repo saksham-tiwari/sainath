@@ -6,7 +6,7 @@ const EventsCard = (props) => {
   return (
     <div className={styles.eventsCard} onClick={()=>window.open(`https://www.youtube.com/watch?v=${props.url}`,'mywindow')} style={{cursor: "pointer"}}>
     <img src={`https://img.youtube.com/vi/${props.url}/hqdefault.jpg`} style={{maxHeight:"30rem"}} alt="frame"></img>
-    <div>
+    <div className='pt-2'>
         <h2>Screening</h2>
         <p>Dil Dhadakta Hai Tumhare Naam se</p>
     </div>
