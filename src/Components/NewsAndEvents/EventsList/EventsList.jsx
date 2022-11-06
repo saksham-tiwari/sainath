@@ -15,35 +15,6 @@ const EventsList = () => {
                 </div>
             </div>
             <hr className="w-100"></hr>
-            <div className="col d-flex">
-                <div>
-                    <h1>26 Aug</h1>
-                </div>
-                <div>
-                    <h3>The Invitation</h3>
-                    <p>Now playing exclusively in Movie Theaters</p>
-                </div>
-            </div>
-            <hr className="w-100"></hr>
-            <div className="col d-flex">
-                <div>
-                    <h1>26 Aug</h1>
-                </div>
-                <div>
-                    <h3>The Invitation</h3>
-                    <p>Now playing exclusively in Movie Theaters</p>
-                </div>
-            </div>
-            <hr className="w-100"></hr>
-            <div className="col d-flex">
-                <div>
-                    <h1>26 Aug</h1>
-                </div>
-                <div>
-                    <h3>The Invitation</h3>
-                    <p>Now playing exclusively in Movie Theaters</p>
-                </div>
-            </div>
         </div>
     </div>
   )

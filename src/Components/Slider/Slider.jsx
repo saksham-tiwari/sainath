@@ -26,18 +26,7 @@ export default function Slider(props) {
       name:"Meri Chahat",
       about:"MERI CHAAHAT (PART-1) | BAZIRAO BABBAN YADAV, SAPNA SINGH, ANIL SRIVASTAVA | HINDI NEW MOVIE 2022",
       url:"RCOviQFSVcI"
-    },
-    {
-      name:"Vikram Vedha",
-      about:"Thirty years after the Battle of Endor, a new threat has risen in the form of the First Orderand the villainous Kylo Ren.",
-      url:"mqqft2x_Aa4"
-    },
-    {
-      name:"Vikram Vedha",
-      about:"Thirty years after the Battle of Endor, a new threat has risen in the form of the First Orderand the villainous Kylo Ren.",
-      url:"_Z3QKkl1WyM"
     }
-
   ])
 
   return (

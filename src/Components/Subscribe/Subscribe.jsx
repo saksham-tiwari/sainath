@@ -8,7 +8,7 @@ const Subscribe = () => {
   return (
     <div className='subscribe'>
         <h1>SUBSCRIBE</h1>
-        <p>Yes! Email me exclusive updates of latest YRF films. By signing up below, I agree to the YRF Privacy Policy and Terms of Use. </p>
+        <p>Yes! Email me exclusive updates of latest Sainath International films. By signing up below, I agree to the Sainath International's Privacy Policy and Terms of Use. </p>
         <Form onSubmit={submit}>
             <Form.Group className="mb-4" controlId="formBasicEmail">
                 <Form.Label className='fw-bold'>Email</Form.Label>
