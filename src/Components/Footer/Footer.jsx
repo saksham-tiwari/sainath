@@ -23,7 +23,7 @@ const Footer = (props) => {
           <br />
           +91 9022866483 <br />
           <br />
-          contact@sainath.production <br />
+          contact@sainathinternational.com <br />
         </div>
       </div>
       <div className="webFoot" >
@@ -32,7 +32,7 @@ const Footer = (props) => {
         <br />
         +91 9022866483, 9555223296 <br />
         <br />
-        contact@sainath.production <br />
+        contact@sainathinternational.com <br />
       </div>
       <div className={styles.socialBtns} >
         <button>
